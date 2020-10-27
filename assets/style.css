@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@media (max-height: 800px){
+    footer {position: static;}
+}
 *{
     margin: 0;
     padding: 0;
 }
-.header{
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -20,7 +23,7 @@
     z-index: 1000;
 }
 .logo{
-    margin-left: 10px;
+    margin-left: 360px;
 }
 .menu{
     position: relative;
@@ -107,99 +110,73 @@
     line-height: 28px;
     width: 0px;
 }
-
 footer{
     position: fixed;
     bottom: 0;
 }
-@media (max-height:800px){
-    footer {position: static;}
-}
-
 .footer{
-    background-color: #253237;
+    background: #253237;
     box-sizing: border-box;
     width: 100%;
     text-align: left;
     padding: 30px;
-    margin-top: 80px;
-    box-shadow: 0px -5px 5px rgba(37, 50, 55, 0.15);
+    margin-top: 30px;
+    box-shadow: 0 -5px 5px rgba(37, 50, 50, 0.15);
 }
-.footer-I,
-.footer-II,
-.footer-III{
+.footer-left, .footer-right{
     display: inline-block;
     vertical-align: top;
 }
-.footer .footer-I{
-    width: 30%;
-}
-.footer-logo{
-    width: 30%;
-}
-.footer-menu{
-    color: #FBFFFF;
-    margin: 16px 0 8px;
-    list-style: none;
-    font-family: 'Montserrat';
-}
-.footer-menu a{
-    display: inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color: inherit;
-}
-.footer-II{
-    width: 35%;
-}
-.footer-II i{
-    color: #FBFFFF;
-    font-size: 24px;
-    text-align: center;
-    margin: 8px 16px;
-    vertical-align: middle;
-}
-.footer-II i.fa-envelope{
-    font-size: 16px;
-}
-.footer-II p{
-    display: inline-block;
-    color: #FBFFFF;
-    vertical-align: middle;
-    margin: 0;
-    font-family: 'Montserrat';
-    font-size: 12px;
-}
-.footer-II p span{
-    display: block;
-    font-size: 16px;
-}
-.footer-II p a{
-    color: #70A6C4;
-    text-decoration: none;
-}
-.footer-III{
-    width: 30%;
+.footer-left{
+    width: 45%;
+    padding-right: 30px;
 }
 .about{
-    line-height: 20px;
     color: #FBFFFF;
     font-size: 12px;
-    margin: 0;
-    width: 250px;
     font-family: 'Montserrat';
     text-align: justify;
 }
 .about span{
     display: block;
     color: #70A6C4;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 16px;
     font-family: 'Josefin Sans';
 }
-.social-media{
-    margin-top: 30px;
+.footer-right{
+    width: 50%;
+}
+.footer-right i{
+    color: #FBFFFF;
+    font-size: 24px;
+    text-align: center;
+    margin: 8px 16px;
+    vertical-align: middle;
+}
+.footer-right h1{
+    display: block;
+    color: #70A6C4;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Josefin Sans';
+}
+.footer-right p{
+    display: inline-block;
+    color: #FBFFFF;
+    vertical-align: middle;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+.footer-right p span{
+    display: block;
+    font-size: 12px;
+}
+.footer-right p a{
+    color: #70A6C4;
+    text-decoration: none;
 }
 .social-media a{
     display: inline-block;
@@ -207,20 +184,50 @@ footer{
     font-size: 20px;
     color: #FBFFFF;
     text-align: center;
-    margin-right: 4px;
-    margin-bottom: 8px;
+}
+.social-media p{
+    display: block;
+    color: #70A6C4;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Josefin Sans';
+}
+.partners{
+    display: block;
+}
+.partners img{
+    border-radius: 100px;
+    border: 3px solid #5C6B73;
+}
+.partners p{
+    display: block;
+    color: #70A6C4;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Josefin Sans';
+}
+hr{
+    background-color: #5C6B73;
+    border: none;
+}
+.horizontal{
+    margin: 8px;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+    height: 1px;
 }
 @media (max-width: 880px){
-    .footer-I,
-    .footer-II,
-    .footer-III{
+    .footer-left,.footer-right{
         display: block;
         width: 100%;
-        margin-bottom: 30px;
         text-align: center;
+        justify-content: center;
     }
-
-    .footer-II i{
-        margin-left: 0;
+    .footer-left{
+        margin-bottom: 30px;
+    }
+    .about span{
+        text-align: center;
     }
 }
