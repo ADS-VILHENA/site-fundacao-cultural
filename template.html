@@ -9,18 +9,23 @@
         <script src="https://kit.fontawesome.com/f148631463.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="header">
-            <img src="assets/image/logo.png" width="225" height="90" class="logo">
-            <nav class="menu">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Agenda Cultural</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Contato</a></li>
-            </nav>
-            <div class="search-box">
-                <input class="search-text" type="text" name="" placeholder="Digite o que você procura">
-                <a class="search-button" href="#">search</a>
-            </div>
+        <header>
+            <ul class="header">
+                <img src="assets/image/logo.png" width="125" height="50" class="logo">
+                <input type="checkbox" id="check">
+                <label for="check" class="show-menu"><i class="fas fa-bars"></i></label>               
+                <div class="menu">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Agenda Cultural</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <label for="check" class="hide-menu"><i class="fas fa-times"></i></label>
+                </div>
+                <li class="search-bar">
+                    <input type="search" placeholder="Pesquisar">
+                    <label for="check" class="search-button"><i class="fas fa-search"></i></label>                 
+                </li>
+            </ul>
         </header>
 
         <footer class="footer">
