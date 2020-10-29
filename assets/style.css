@@ -7,29 +7,33 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 header{
+    position: fixed;
     background: #FBFFFF;
-    color: #253237;
+    width: 100%;
     padding: 10px 30px;
+    top: 0;
+    z-index: 999;
     box-shadow: 0 5px 5px rgba(37, 50, 50, 0.15);
 }
 .header{
+    max-width: 1200px;
+    margin: auto;
+}
+header .header{
     display: flex;
-    list-style: none;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-}.logo{
-    float: left;
 }
 .menu{
     display: inline-flex;
 }
 .menu a{
-    text-decoration: none;
     color: #253237;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
@@ -39,11 +43,7 @@ header{
 .show-menu, .hide-menu{
     font-size: 30px;
     cursor: pointer;
-    transition: .5s;
     display: none;
-}
-.show-menu{
-    float: left;
 }
 #check{
     position: absolute;
@@ -54,7 +54,6 @@ header{
     height: 32px;
     width: 240px;
     display: flex;
-    background: #253237;
     border-radius: 5px;
 }
 .search-bar input{
@@ -66,14 +65,15 @@ header{
     padding: 0 10px;
     color: #253237;
     font-size: 14px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 25px 0 0 25px;
 }
 .search-button{
     height: 100%;
     width: 32px;
     line-height: 32px;
     text-align: center;
-    border-radius: 0 5px 5px 0;
+    background: #253237;
+    border-radius: 0 25px 25px 0;
     cursor: pointer;
 }
 .search-button i{
@@ -92,86 +92,67 @@ header{
 }
 
 footer{
-    position: fixed;
-    bottom: 0;
-}
-.footer{
+    position: absolute;
     background: #253237;
-    box-sizing: border-box;
     width: 100%;
-    text-align: left;
     padding: 10px 30px;
+    bottom: 0;
     margin-top: 30px;
     box-shadow: 0 -5px 5px rgba(37, 50, 50, 0.15);
+}
+.footer{
+    max-width: 1200px;
+    margin: auto;
+}
+footer .footer{
+    display: flex;
+    align-items: center;
+}
+.footer h1{
+    display: block;
+    color: #70A6C4;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .footer-left, .footer-right{
     display: inline-block;
     vertical-align: top;
 }
 .footer-left{
-    width: 45%;
-    padding-right: 30px;
+    width: 50%;
+    padding-right: 15px;
 }
-.about{
+.footer-left p{
     color: #FBFFFF;
-    font-size: 12px;
-    font-family: 'Montserrat';
+    font-size: 14px;
     text-align: justify;
-}
-.about span{
-    display: block;
-    color: #70A6C4;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    font-family: 'Josefin Sans';
 }
 .footer-right{
     width: 50%;
-}
-.footer-right i{
-    color: #FBFFFF;
-    font-size: 24px;
-    text-align: center;
-    margin: 8px 16px;
-    vertical-align: middle;
-}
-.footer-right h1{
-    display: block;
-    color: #70A6C4;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Josefin Sans';
+    padding-left: 15px;
 }
 .footer-right p{
     display: inline-block;
     color: #FBFFFF;
     vertical-align: middle;
     margin: 0;
-    font-family: 'Montserrat';
     font-size: 16px;
 }
-.footer-right p span{
+.footer-right i{
+    color: #FBFFFF;
+    font-size: 20px;
+    text-align: center;
+    margin: 8px 8px;
+    vertical-align: middle;
+}
+.footer-right span{
     display: block;
     font-size: 12px;
 }
 .footer-right p a{
     color: #70A6C4;
     text-decoration: none;
-}
-.social-media a{
-    display: inline-block;
-    cursor: pointer;
-    font-size: 20px;
-    color: #FBFFFF;
-    text-align: center;
-}
-.social-media p{
-    display: block;
-    color: #70A6C4;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Josefin Sans';
 }
 .partners{
     display: block;
@@ -180,23 +161,15 @@ footer{
     border-radius: 100px;
     border: 3px solid #5C6B73;
 }
-.partners p{
-    display: block;
-    color: #70A6C4;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Josefin Sans';
-}
 hr{
     background-color: #5C6B73;
     border: none;
 }
 .horizontal{
-    margin: 8px;
-    margin-left: 0;
+    margin: 8px 0;
     width: 100%;
     display: block;
-    height: 1px;
+    height: 2px;
 }
 
 @media (max-width: 800px){
@@ -221,11 +194,14 @@ hr{
     }
     .hide-menu{
         position: absolute;
-        top: 10px;
-        left: 30px;
+        top: 8px;
+        left: 16px;
     }
     #check:checked ~ .menu{
         left: 0;
+    }
+    header, footer{
+        padding: 8px 16px;
     }
 }
 @media (max-width: 880px){
@@ -238,9 +214,6 @@ hr{
     .footer-left{
         display: none;
         margin-bottom: 30px;
-    }
-    .about span{
-        text-align: center;
     }
 }
 @media (max-width: 1016px){
