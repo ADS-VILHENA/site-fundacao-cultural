@@ -241,6 +241,83 @@ hr{
     color: #333333;
     
     }
+    .container {
+        width: 50%;
+        margin: 110px auto;
+      }
+      
+      .form-contact {
+        width: 100%;
+        
+      }
+      .container p {
+        width: 100%;
+        font-family: Josefin Sans;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        color: #333333;
+
+      }
+      
+      .form-contact-input {
+        width: 100%;
+        color: #292929;
+        font-size: 18px;
+        background-color: #E9E9E9;
+        border: 1px solid #E9E9E9;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        height: 40px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        text-indent: 20px;
+        font-family: Josefin Sans;
+      }
+      
+      .form-contact-textarea {
+        width: 100%;
+        color: #292929;
+        font-size: 18px;
+        background-color: #E9E9E9;
+        border: 1px solid #E9E9E9;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        height: 200px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        text-indent: 20px;
+        padding-top: 16px;
+        padding-left: 0;
+        padding-right: 0;
+        font-family: Josefin Sans;
+      }
+      
+    .form-contact-button {
+    position: absolute;
+    width: 120px;
+    height: 32.77px;
+    left: 620px;
+    top: 610px;
+    background: #A9D2E8;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 20px;
+
+    }
+    
+     
 
 @media (max-width: 800px){
     .show-menu, .hide-menu{
