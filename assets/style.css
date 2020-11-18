@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@media (max-height: 800px){
-    footer {position: static;}
-}
-*{
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -12,8 +10,9 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
-header{
-    position: fixed;
+
+header {
+    position: relative;
     background: #FBFFFF;
     width: 100%;
     padding: 10px 30px;
@@ -21,42 +20,50 @@ header{
     z-index: 999;
     box-shadow: 0 5px 5px rgba(37, 50, 50, 0.15);
 }
-.header{
+
+.header {
     max-width: 1200px;
     margin: auto;
 }
-header .header{
+
+header .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.menu{
+
+.menu {
     display: inline-flex;
 }
-.menu a{
+
+.menu a {
     color: #253237;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     padding: 0 16px;
 }
-.show-menu, .hide-menu{
+
+.show-menu,
+.hide-menu {
     font-size: 30px;
     cursor: pointer;
     display: none;
 }
-#check{
+
+#check {
     position: absolute;
     visibility: hidden;
     z-index: -1000;
 }
-.search-bar{
+
+.search-bar {
     height: 32px;
     width: 240px;
     display: flex;
-    border-radius: 5px;
 }
-.search-bar input{
+
+.search-bar input {
     height: 100%;
     width: 208px;
     outline: none;
@@ -67,7 +74,8 @@ header .header{
     font-size: 14px;
     border-radius: 25px 0 0 25px;
 }
-.search-button{
+
+.search-button {
     height: 100%;
     width: 32px;
     line-height: 32px;
@@ -76,23 +84,83 @@ header .header{
     border-radius: 0 25px 25px 0;
     cursor: pointer;
 }
-.search-button i{
+
+.search-button i {
     color: #FBFFFF;
     font-size: 18px;
 }
+
 .menu a:hover,
 .show-menu:hover,
-.hide-menu:hover{
+.hide-menu:hover {
     color: #5C6B73;
     transition: .7s;
 }
-.search-button:hover{
+
+.search-button:hover {
     background-color: #47CF73;
     transition: .7s;
 }
 
-footer{
-    position: absolute;
+content {
+    position: relative;
+    background: #FBFFFF;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    height: 1500px;
+    background: #C0C0C0;
+}
+
+content .content {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    background: #FBFFFF;
+    display: flex;
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgba(37, 50, 55, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
+}
+
+.card img {
+    width: 35%;
+    margin-right: 30px;
+    border: 2px solid red;
+}
+
+.card h1 {
+    display: block;
+    color: #253237;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.card p {
+    color: #5C6B73;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.card button {
+    width: 50px;
+    height: 50px;
+    color: #253237;
+    background: #A9D2E8;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 100px;
+    border: none;
+}
+
+footer {
     background: #253237;
     width: 100%;
     padding: 10px 30px;
@@ -100,83 +168,102 @@ footer{
     margin-top: 30px;
     box-shadow: 0 -5px 5px rgba(37, 50, 50, 0.15);
 }
-.footer{
+
+.footer {
     max-width: 1200px;
     margin: auto;
 }
-footer .footer{
+
+footer .footer {
     display: flex;
     align-items: center;
 }
-.footer h1{
+
+.footer ft {
     display: block;
     color: #70A6C4;
     font-size: 18px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
 }
-.footer-left, .footer-right{
+
+.footer-left,
+.footer-right {
     display: inline-block;
     vertical-align: top;
 }
-.footer-left{
+
+.footer-left {
     width: 50%;
     padding-right: 15px;
 }
-.footer-left p{
+
+.footer-left p {
     color: #FBFFFF;
     font-size: 14px;
     text-align: justify;
 }
-.footer-right{
+
+.footer-right {
     width: 50%;
     padding-left: 15px;
 }
-.footer-right p{
+
+.footer-right p {
     display: inline-block;
     color: #FBFFFF;
     vertical-align: middle;
     margin: 0;
     font-size: 16px;
 }
-.footer-right i{
+
+.footer-right i {
     color: #FBFFFF;
     font-size: 20px;
     text-align: center;
     margin: 8px 8px;
     vertical-align: middle;
 }
-.footer-right span{
+
+.footer-right span {
     display: block;
     font-size: 12px;
 }
-.footer-right p a{
+
+.footer-right p a {
     color: #70A6C4;
     text-decoration: none;
 }
-.partners{
+
+.partners {
     display: block;
 }
-.partners img{
+
+.partners img {
     border-radius: 100px;
     border: 3px solid #5C6B73;
 }
-hr{
+
+hr {
     background-color: #5C6B73;
     border: none;
 }
-.horizontal{
+
+.horizontal {
     margin: 8px 0;
     width: 100%;
     display: block;
     height: 2px;
 }
 
-@media (max-width: 800px){
-    .show-menu, .hide-menu{
+@media (max-width: 800px) {
+
+    .show-menu,
+    .hide-menu {
         display: block;
     }
-    .menu{
+
+    .menu {
         position: fixed;
         width: 75%;
         height: 100%;
@@ -189,35 +276,44 @@ hr{
         z-index: 10;
         transition: 0.7s;
     }
-    .menu li{
+
+    .menu li {
         padding: 20px;
     }
-    .hide-menu{
+
+    .hide-menu {
         position: absolute;
         top: 8px;
         left: 16px;
     }
-    #check:checked ~ .menu{
+
+    #check:checked~.menu {
         left: 0;
     }
-    header, footer{
+
+    header,
+    content,
+    footer {
         padding: 8px 16px;
     }
 }
-@media (max-width: 880px){
-    .footer-left,.footer-right{
+
+@media (max-width: 880px) {
+    .footer-right {
         display: block;
         width: 100%;
         text-align: center;
         justify-content: center;
+        padding: 0;
     }
-    .footer-left{
+
+    .footer-left {
         display: none;
-        margin-bottom: 30px;
     }
 }
-@media (max-width: 1016px){
-    .logo{
+
+@media (max-width: 1016px) {
+    .logo {
         display: none;
     }
 }
