@@ -112,7 +112,6 @@ content {
 .content {
     max-width: 1200px;
     margin: auto;
-    height: 1500px;
     background: #C0C0C0;
 }
 
@@ -199,6 +198,32 @@ content .content {
     font-size: 16px;
     border-radius: 100px;
     border: none;
+}
+.book {
+    position: relative;
+    width: 25%;
+    text-align: left;
+    background-color: #FBFFFF;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 30px 0;
+    padding: 10px;
+}
+.book h1 {
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.book span {
+    display: block;
+    padding: 4px;
+}
+.book span:last-child{
+    text-align: center;
+}
+.book span i {
+    margin-right: 8px;
 }
 
 footer {
