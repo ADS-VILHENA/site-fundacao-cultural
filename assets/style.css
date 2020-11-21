@@ -117,7 +117,7 @@ content {
 }
 
 content .content {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -151,6 +151,43 @@ content .content {
 }
 
 .card button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+    color: #5C6B73;
+    font-size: 16px;
+    background: #A9D2E8;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 100px;
+    border: none;
+}
+
+.badger {
+    position: relative;
+    width: 25%;
+    text-align: left;
+    background-color: #FBFFFF;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 30px 0;
+    padding: 10px;
+}
+.badger h1 {
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.badger span {
+    display: block;
+    padding: 4px;
+}
+.badger span i {
+    margin-right: 8px;
+}
+.badger button {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -263,174 +300,6 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.conteiner {
-    margin-bottom: 150px;
-    width: 100%;
-    top: 150px;
-}
-
-.bloco {
-    position: relative;
-    width: 1200px;
-    height: 245px;
-    left: 60px;
-    top: 110px;
-    background: #FBFFFF;
-    box-shadow: 0px 5px 5px rgba(37, 50, 55, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
-    display: flex;
-    margin-bottom: 40px;
-}
-
-.bloco img {
-    position: absolute;
-    width: 370px;
-    height: 225px;
-    left: 20px;
-    top: 10px;
-
-}
-
-.bloco h3 {
-    position: absolute;
-    width: 550px;
-    height: 64.38px;
-    left: 420px;
-    top: 10px;
-    font-family: Josefin Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 40px;
-    color: #333333;
-}
-
-.bloco p {
-    position: absolute;
-    width: 760px;
-    height: 99.15px;
-    left: 420px;
-    top: 60px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 29px;
-    text-align: justify;
-    color: rgba(51, 51, 51, 0.7);
-
-}
-
-.bloco input {
-    position: absolute;
-    width: 120px;
-    height: 32.77px;
-    left: 1040px;
-    top: 190px;
-    background: #A9D2E8;
-    border-radius: 100px;
-    cursor: pointer;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 29px;
-    color: #333333;
-
-}
-
-.container {
-    width: 50%;
-    margin: 110px auto;
-}
-
-.form-contact {
-    width: 100%;
-
-}
-
-.container p {
-    width: 100%;
-    font-family: Josefin Sans;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 30px;
-    text-align: center;
-    color: #333333;
-
-}
-
-.form-contact-input {
-    width: 100%;
-    color: #292929;
-    font-size: 18px;
-    background-color: #E9E9E9;
-    border: 1px solid #E9E9E9;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    height: 40px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    text-indent: 20px;
-    font-family: Josefin Sans;
-}
-
-.form-contact-textarea {
-    width: 100%;
-    color: #292929;
-    font-size: 18px;
-    background-color: #E9E9E9;
-    border: 1px solid #E9E9E9;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    height: 200px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    text-indent: 20px;
-    padding-top: 16px;
-    padding-left: 0;
-    padding-right: 0;
-    font-family: Josefin Sans;
-}
-
-.form-contact-button {
-    position: absolute;
-    width: 120px;
-    height: 32.77px;
-    left: 620px;
-    top: 610px;
-    background: #A9D2E8;
-    border-radius: 100px;
-    cursor: pointer;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 29px;
-    color: #333333;
-    margin-bottom: 20px;
-
-}
-
-
-
 @media (max-width: 800px) {
 
     header,
@@ -467,6 +336,9 @@ hr {
         top: 8px;
         left: 16px;
     }
+    .content{
+        padding: 0 8px;
+    }
 
     .card {
         display: inline-block;
@@ -480,7 +352,7 @@ hr {
     }
 
     .card img {
-        width: 90%;
+        width: 75%;
         margin: auto;
     }
 
