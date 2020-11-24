@@ -113,10 +113,14 @@ content {
     max-width: 1200px;
     margin: auto;
     background: #C0C0C0;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 content .content {
-    display: inline-flex;
     align-items: center;
 }
 
@@ -165,63 +169,77 @@ content .content {
 
 .badger {
     position: relative;
-    width: 25%;
-    text-align: left;
+    width: 22.5%;
+    text-align: center;
     background-color: #FBFFFF;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    margin: 30px 0;
-    padding: 10px;
-}
-.badger h1 {
-    text-align: center;
+    margin-top: 30px;
     padding: 8px;
+}
+
+.badger img{
+    border-radius: 1000px;
+    width: 200px;
+    max-height: 200px;
+}
+
+.badger h1 {
+    padding: 8px 0;
     font-size: 20px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 .badger span {
     display: block;
-    padding: 4px;
+    padding: 4px 0;
 }
+
 .badger span i {
     margin-right: 8px;
 }
+
 .badger button {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
     padding: 8px;
     color: #5C6B73;
     font-size: 16px;
     background: #A9D2E8;
-    text-align: center;
     font-size: 16px;
     border-radius: 100px;
     border: none;
 }
+
 .book {
     position: relative;
-    width: 25%;
-    text-align: left;
+    width: 22.5%;
+    text-align: center;
     background-color: #FBFFFF;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    margin: 30px 0;
-    padding: 10px;
+    margin-top: 30px;
+    padding: 8px;
 }
+
+.book img {
+    width: 95%;
+}
+
 .book h1 {
-    text-align: center;
     padding: 8px;
     font-size: 20px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 .book span {
+    text-align: left;
     display: block;
     padding: 4px;
 }
-.book span:last-child{
+
+.book span:last-child {
     text-align: center;
 }
+
 .book span i {
     margin-right: 8px;
 }
@@ -323,7 +341,17 @@ hr {
     height: 2px;
 }
 
+@media (max-width: 1016px) {
+    .logo {
+        display: none;
+    }
+}
 
+@media (max-width: 1000px) {
+    .badger, .book {
+        width: 30%;
+    }
+}
 
 @media (max-width: 800px) {
 
@@ -361,7 +389,8 @@ hr {
         top: 8px;
         left: 16px;
     }
-    .content{
+
+    .content {
         padding: 0 8px;
     }
 
@@ -370,7 +399,7 @@ hr {
         text-align: center;
     }
 
-    .card button{
+    .card button {
         position: relative;
         bottom: auto;
         right: auto;
@@ -384,9 +413,11 @@ hr {
     #check:checked~.menu {
         left: 0;
     }
-}
 
-@media (max-width: 880px) {
+    .badger, .book {
+        width: 45%;
+    }
+
     .footer-right {
         display: block;
         width: 100%;
@@ -400,8 +431,8 @@ hr {
     }
 }
 
-@media (max-width: 1016px) {
-    .logo {
-        display: none;
+@media (max-width: 600px) {
+    .badger, .book {
+        width: 90%;
     }
 }
