@@ -177,10 +177,10 @@ content .content {
     padding: 8px;
 }
 
-.badger img{
+.badger img {
     border-radius: 1000px;
-    width: 200px;
-    max-height: 200px;
+    width: 212px;
+    height: 212px;
 }
 
 .badger h1 {
@@ -220,7 +220,8 @@ content .content {
 }
 
 .book img {
-    width: 95%;
+    width: 262px;
+    height: 350px;
 }
 
 .book h1 {
@@ -348,7 +349,9 @@ hr {
 }
 
 @media (max-width: 1000px) {
-    .badger, .book {
+
+    .badger,
+    .book {
         width: 30%;
     }
 }
@@ -414,7 +417,8 @@ hr {
         left: 0;
     }
 
-    .badger, .book {
+    .badger,
+    .book {
         width: 45%;
     }
 
@@ -432,7 +436,9 @@ hr {
 }
 
 @media (max-width: 600px) {
-    .badger, .book {
+
+    .badger,
+    .book {
         width: 90%;
     }
 }
