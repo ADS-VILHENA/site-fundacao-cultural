@@ -112,7 +112,6 @@ content {
 .content {
     max-width: 1200px;
     margin: auto;
-    background: #C0C0C0;
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
@@ -136,7 +135,6 @@ content .content {
 .card img {
     width: 35%;
     margin-right: 30px;
-    border: 2px solid red;
 }
 
 .card h1 {
@@ -242,6 +240,43 @@ content .content {
 }
 
 .book span i {
+    margin-right: 8px;
+}
+
+.artist h1 {
+    display: block;
+    color: #253237;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.about {
+    width: 100%;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about p {
+    margin-right: 15px;
+}
+
+.info {
+    margin-left: 15px;
+}
+
+.info img {
+    max-width: 278px;
+    max-height: 400px;
+}
+
+.info span {
+    display: block;
+    padding: 4px;
+}
+
+.info span i {
     margin-right: 8px;
 }
 
