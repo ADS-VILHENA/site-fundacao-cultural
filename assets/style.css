@@ -102,14 +102,14 @@ header .header {
     transition: .7s;
 }
 
-content {
+main {
     position: relative;
     background: #FBFFFF;
     width: 100%;
     padding: 10px 30px;
 }
 
-.content {
+.main {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -119,8 +119,20 @@ content {
     align-items: center;
 }
 
-content .content {
+main .main {
     align-items: center;
+}
+
+.content h1 {
+    display: block;
+    color: #253237;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.content p {
+    margin-bottom: 8px;
 }
 
 .segment {
@@ -244,18 +256,6 @@ content .content {
     margin-right: 8px;
 }
 
-.artist h1 {
-    display: block;
-    color: #253237;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.artist p {
-    margin-bottom: 8px;
-}
-
 .about {
     width: 100%;
     text-align: justify;
@@ -312,6 +312,7 @@ content .content {
     font-size: 16px;
     text-align: justify;
 }
+
 .event span {
     display: block;
     text-align: left;
@@ -436,7 +437,7 @@ hr {
 @media (max-width: 800px) {
 
     header,
-    content,
+    main,
     footer {
         padding: 8px 16px;
     }
@@ -470,7 +471,7 @@ hr {
         left: 16px;
     }
 
-    .content {
+    .main {
         padding: 0 8px;
     }
 
@@ -498,21 +499,19 @@ hr {
 
 @media (max-width: 600px) {
 
-    *{
-        padding: 8px;
-    }
-
     .badge,
     .book {
         width: 100%;
     }
 
-    .segment, .event {
+    .segment,
+    .event {
         display: block;
         text-align: center;
     }
 
-    .segment img, .event img {
+    .segment img,
+    .event img {
         width: 90%;
         margin: auto;
     }
