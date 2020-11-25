@@ -117,8 +117,26 @@ content {
     flex-flow: wrap;
     justify-content: space-around;
     align-items: center;
+    text-align: left;
+}
+.titlepag{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
+    text-align: left;
 }
 
+.titlepag h1{
+    display: block;
+    color: #253237;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 10px;
+}
 content .content {
     align-items: center;
 }
@@ -129,7 +147,9 @@ content .content {
     background: #FBFFFF;
     display: flex;
     padding: 10px;
+    margin: 10px;
     box-shadow: 0px 5px 5px rgba(37, 50, 55, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
+    
 }
 
 .segment img {
@@ -152,6 +172,49 @@ content .content {
 }
 
 .segment button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+    color: #5C6B73;
+    font-size: 16px;
+    background: #A9D2E8;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 100px;
+    border: none;
+}
+
+ .conteudo {
+    position: relative;
+    width: 100%;
+    background: #FBFFFF;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 5px 5px rgba(37, 50, 55, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
+}
+
+.conteudo img {
+    width: 45%;
+    margin-right: 30px;
+}
+
+.conteudo h1 {
+    display: block;
+    color: #253237;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.conteudo p {
+    color: #5C6B73;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.conteudo button {
     position: absolute;
     bottom: 10px;
     right: 10px;
