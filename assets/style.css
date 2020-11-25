@@ -123,7 +123,7 @@ content .content {
     align-items: center;
 }
 
-.card {
+.segment {
     position: relative;
     width: 100%;
     background: #FBFFFF;
@@ -132,12 +132,12 @@ content .content {
     box-shadow: 0px 5px 5px rgba(37, 50, 55, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
 }
 
-.card img {
+.segment img {
     width: 35%;
     margin-right: 30px;
 }
 
-.card h1 {
+.segment h1 {
     display: block;
     color: #253237;
     font-size: 20px;
@@ -145,13 +145,13 @@ content .content {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.card p {
+.segment p {
     color: #5C6B73;
     font-size: 16px;
     text-align: justify;
 }
 
-.card button {
+.segment button {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -165,7 +165,7 @@ content .content {
     border: none;
 }
 
-.badger {
+.badge {
     position: relative;
     width: 22.5%;
     text-align: center;
@@ -175,29 +175,30 @@ content .content {
     padding: 8px;
 }
 
-.badger img {
+.badge img {
     border-radius: 1000px;
     width: 212px;
     height: 212px;
 }
 
-.badger h1 {
+.badge h1 {
     padding: 8px 0;
     font-size: 20px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.badger span {
+.badge span {
     display: block;
     padding: 4px 0;
+    text-align: left;
 }
 
-.badger span i {
+.badge span i {
     margin-right: 8px;
 }
 
-.badger button {
+.badge button {
     padding: 8px;
     color: #5C6B73;
     font-size: 16px;
@@ -251,18 +252,20 @@ content .content {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.artist p {
+    margin-bottom: 8px;
+}
+
 .about {
     width: 100%;
     text-align: justify;
-    display: flex;
-    justify-content: space-between;
-}
-
-.about p {
-    margin-right: 15px;
+    color: #5C6B73;
+    font-size: 16px;
 }
 
 .info {
+    text-align: center;
+    float: right;
     margin-left: 15px;
 }
 
@@ -273,11 +276,53 @@ content .content {
 
 .info span {
     display: block;
-    padding: 4px;
+    padding: 4px 0;
 }
 
 .info span i {
     margin-right: 8px;
+    color: #253237;
+}
+
+.event {
+    position: relative;
+    width: 100%;
+    background: #FBFFFF;
+    display: flex;
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgba(37, 50, 55, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
+    margin-top: 30px;
+}
+
+.event img {
+    width: 35%;
+    margin-right: 30px;
+}
+
+.event h1 {
+    display: block;
+    color: #253237;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.event p {
+    color: #5C6B73;
+    font-size: 16px;
+    text-align: justify;
+}
+.event span {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    color: #5C6B73;
+    padding: 4px 0;
+}
+
+.event span i {
+    margin-right: 8px;
+    color: #253237;
 }
 
 footer {
@@ -381,11 +426,8 @@ hr {
     .logo {
         display: none;
     }
-}
 
-@media (max-width: 1000px) {
-
-    .badger,
+    .badge,
     .book {
         width: 30%;
     }
@@ -432,27 +474,11 @@ hr {
         padding: 0 8px;
     }
 
-    .card {
-        display: inline-block;
-        text-align: center;
-    }
-
-    .card button {
-        position: relative;
-        bottom: auto;
-        right: auto;
-    }
-
-    .card img {
-        width: 75%;
-        margin: auto;
-    }
-
     #check:checked~.menu {
         left: 0;
     }
 
-    .badger,
+    .badge,
     .book {
         width: 45%;
     }
@@ -472,8 +498,38 @@ hr {
 
 @media (max-width: 600px) {
 
-    .badger,
+    *{
+        padding: 8px;
+    }
+
+    .badge,
     .book {
+        width: 100%;
+    }
+
+    .segment, .event {
+        display: block;
+        text-align: center;
+    }
+
+    .segment img, .event img {
         width: 90%;
+        margin: auto;
+    }
+
+    .segment button {
+        position: relative;
+        float: none;
+        bottom: auto;
+        right: auto;
+    }
+
+    .artist h1:first-child {
+        display: none;
+    }
+
+    .info {
+        float: none;
+        margin: auto;
     }
 }
