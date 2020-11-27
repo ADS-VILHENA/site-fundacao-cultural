@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 * {
     margin: 0;
@@ -133,6 +132,20 @@ main .main {
 
 .content p {
     margin-bottom: 8px;
+}
+
+.contact {
+    width: 75%;
+}
+
+.contact input,
+.contact textarea {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    background: #E9E9E9;
+    padding-left: 5px;
+    outline: none;
 }
 
 .segment {
