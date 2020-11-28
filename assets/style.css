@@ -68,7 +68,7 @@ header .header {
     outline: none;
     border: 1px solid #253237;
     border-right: none;
-    padding: 0 10px;
+    padding-left: 10px;
     color: #253237;
     font-size: 14px;
     border-radius: 25px 0 0 25px;
@@ -82,6 +82,7 @@ header .header {
     background: #253237;
     border-radius: 0 25px 25px 0;
     cursor: pointer;
+    border: 0;
 }
 
 .search-button i {
@@ -122,6 +123,10 @@ main .main {
     align-items: center;
 }
 
+.content {
+    width: 100%;
+}
+
 .content h1 {
     display: block;
     color: #253237;
@@ -135,17 +140,41 @@ main .main {
 }
 
 .contact {
-    width: 75%;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
 }
 
-.contact input,
-.contact textarea {
+.form_contact{
+    width: 100%;
+    padding: 0 30px;
+}
+
+.form_contact input,
+.form_contact textarea {
+    display: block;
+    width: 100%;
     border: none;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 2px;
     background: #E9E9E9;
     padding-left: 5px;
     outline: none;
+    margin-bottom: 16px;
+    line-height: 32px;
+    border-radius: 5px;
+}
+
+.form_contact button {
+    padding: 8px;
+    color: #5C6B73;
+    font-size: 16px;
+    background: #A9D2E8;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
 }
 
 .segment {
@@ -171,6 +200,7 @@ main .main {
 }
 
 .segment p {
+    display: block;
     color: #5C6B73;
     font-size: 16px;
     text-align: justify;
@@ -195,15 +225,16 @@ main .main {
     width: 22.5%;
     text-align: center;
     background-color: #FBFFFF;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
     margin-top: 30px;
     padding: 8px;
 }
 
 .badge img {
     border-radius: 1000px;
-    width: 212px;
-    height: 212px;
+    width: 97.5%;
+    max-height: 250px;
+    object-fit: cover;
 }
 
 .badge h1 {
@@ -238,14 +269,14 @@ main .main {
     width: 22.5%;
     text-align: center;
     background-color: #FBFFFF;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
     margin-top: 30px;
     padding: 8px;
 }
 
 .book img {
-    width: 262px;
-    height: 350px;
+    width: 97.5%;
+    max-height: 350px;
 }
 
 .book h1 {
@@ -321,6 +352,7 @@ main .main {
 }
 
 .event p {
+    display: block;
     color: #5C6B73;
     font-size: 16px;
     text-align: justify;
@@ -335,6 +367,49 @@ main .main {
 }
 
 .event span i {
+    margin-right: 8px;
+    color: #253237;
+}
+
+.exposition {
+    position: relative;
+    width: 100%;
+    background: #FBFFFF;
+    display: flex;
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgba(37, 50, 55, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
+    margin-top: 30px;
+}
+
+.exposition img {
+    width: 65%;
+    margin-right: 30px;
+}
+
+.exposition h1 {
+    display: block;
+    color: #253237;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.exposition p {
+    display: block;
+    color: #5C6B73;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.exposition span {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    color: #5C6B73;
+    padding: 4px 0;
+}
+
+.exposition span i {
     margin-right: 8px;
     color: #253237;
 }
