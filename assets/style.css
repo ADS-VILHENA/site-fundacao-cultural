@@ -124,7 +124,9 @@ main .main {
 }
 
 .content {
+    display: flex;
     width: 100%;
+    text-align: center;
 }
 
 .content h1 {
@@ -145,9 +147,71 @@ main .main {
     text-align: center;
 }
 
-.form_contact{
+.news {
+    width: 75%; 
+    position: relative;
+    display:block;
+}
+.news img {
     width: 100%;
-    padding: 0 30px;
+    object-fit: cover;
+    max-height: 550px;
+}
+.news h1 {
+    display: block;
+    color: #253237;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;       
+}
+.news p {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+.segments {
+    width: 25%;
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    float: right;
+}
+
+.index_segment {
+    width: 100%;
+    position: relative;
+}
+.index_segment img {
+    width: 100%;
+    filter: brightness(15%);
+    max-height: 170px;
+    object-fit: cover;
+}
+.index_segment h1 {
+    position: absolute;
+    bottom: 8px;
+    text-align: left;
+    margin-left: 8px;
+    color: #FBFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;     
+}
+
+.rondon {
+    width: 100%;
+}
+
+.rondon img {
+    width: 30%;
+    padding: 0 15px;
+}
+
+.rondon p {
+    text-align: justify;
+}
+
+.form_contact {
+    width: 100%;
 }
 
 .form_contact input,
@@ -189,6 +253,8 @@ main .main {
 .segment img {
     width: 35%;
     margin-right: 30px;
+    max-height: 245px;
+    object-fit: cover;
 }
 
 .segment h1 {
@@ -277,6 +343,7 @@ main .main {
 .book img {
     width: 97.5%;
     max-height: 350px;
+    object-fit: cover;
 }
 
 .book h1 {
@@ -316,6 +383,7 @@ main .main {
 .info img {
     max-width: 278px;
     max-height: 400px;
+    object-fit: cover;
 }
 
 .info span {
@@ -341,6 +409,7 @@ main .main {
 .event img {
     width: 35%;
     margin-right: 30px;
+    object-fit: cover;
 }
 
 .event h1 {
@@ -384,6 +453,7 @@ main .main {
 .exposition img {
     width: 65%;
     margin-right: 30px;
+    object-fit: cover;
 }
 
 .exposition h1 {
@@ -497,6 +567,7 @@ footer .footer {
 .partners img {
     border-radius: 100px;
     border: 3px solid #5C6B73;
+    object-fit: cover;
 }
 
 hr {
@@ -519,6 +590,10 @@ hr {
     .badge,
     .book {
         width: 30%;
+    }
+
+    .rondon img {
+        padding: 0;
     }
 }
 
@@ -618,5 +693,9 @@ hr {
     .info {
         float: none;
         margin: auto;
+    }
+
+    .rondon img {
+        width: 100%;
     }
 }
