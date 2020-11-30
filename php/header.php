@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html <?php language_attributes();?>>
 <link rel="shortcut icon" href="favicon.png">
 
 <head>
-    <title>Fundação Cultural de Vilhena</title>
-    <!--Lembre-se de alterar o título da página.-->
-    <meta charset="UTF-8">
+    
+    <meta charset="<?php bloginfo('charset');?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+    
     <script src="https://kit.fontawesome.com/f148631463.js" crossorigin="anonymous"></script>
+    <?php wp_head(); ?>
 </head>
 
 <body>
     <header>
         <nav class="header">
-            <img src="assets/image/logo.png" width="125" alt="Fundação Cultural de Vilhena" class="logo">
+            <a href <?php echo home_url ('/'); ?>><img src="assets/image/logo.png" width="125" alt="Fundação Cultural de Vilhena" class="logo"></a>
             <input type="checkbox" id="check">
             <label for="check" class="show-menu"><i class="fas fa-bars"></i></label>
             <div class="menu">
