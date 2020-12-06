@@ -7,6 +7,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     box-sizing: border-box;
 }
 
@@ -38,7 +39,7 @@ header .header {
 .menu a {
     color: #253237;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     padding: 0 16px;
 }
@@ -70,7 +71,7 @@ header .header {
     border-right: none;
     padding-left: 10px;
     color: #253237;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 25px 0 0 25px;
 }
 
@@ -125,14 +126,16 @@ main .main {
 
 .content {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     text-align: center;
+    justify-content: space-between;
 }
 
 .content h1 {
     display: block;
     color: #253237;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -160,7 +163,7 @@ main .main {
 .news h1 {
     display: block;
     color: #253237;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;       
 }
@@ -192,7 +195,7 @@ main .main {
     text-align: left;
     margin-left: 8px;
     color: #FBFFFF;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;     
 }
@@ -233,10 +236,9 @@ main .main {
 .form_contact button {
     padding: 8px;
     color: #5C6B73;
-    font-size: 16px;
+    font-size: 18px;
     background: #A9D2E8;
     text-align: center;
-    font-size: 16px;
     border-radius: 100px;
     border: none;
     cursor: pointer;
@@ -249,6 +251,7 @@ main .main {
     display: flex;
     padding: 10px;
     box-shadow: 0px 5px 5px rgba(37, 50, 55, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
+    margin-top: 30px;
 }
 
 .segment img {
@@ -261,7 +264,7 @@ main .main {
 .segment h1 {
     display: block;
     color: #253237;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -269,7 +272,7 @@ main .main {
 .segment p {
     display: block;
     color: #5C6B73;
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
 }
 
@@ -279,17 +282,16 @@ main .main {
     right: 10px;
     padding: 8px;
     color: #5C6B73;
-    font-size: 16px;
+    font-size: 18px;
     background: #A9D2E8;
     text-align: center;
-    font-size: 16px;
     border-radius: 100px;
     border: none;
 }
 
 .badge {
     position: relative;
-    width: 22.5%;
+    width: 23%;
     text-align: center;
     background-color: #FBFFFF;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
@@ -297,16 +299,28 @@ main .main {
     padding: 8px;
 }
 
-.badge img {
-    border-radius: 1000px;
-    width: 97.5%;
-    max-height: 250px;
+.badge-img {
+    width: 75%;
+    height: 0;
+    padding-top: 75%;
+    position: relative;
+    margin: auto;
+}
+
+.badge-img img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    vertical-align: top;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .badge h1 {
     padding: 8px 0;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -324,32 +338,43 @@ main .main {
 .badge button {
     padding: 8px;
     color: #5C6B73;
-    font-size: 16px;
+    font-size: 18px;
     background: #A9D2E8;
-    font-size: 16px;
     border-radius: 100px;
     border: none;
 }
 
 .book {
     position: relative;
-    width: 22.5%;
+    width: 23%;
     text-align: center;
     background-color: #FBFFFF;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);   
     margin-top: 30px;
     padding: 8px;
 }
 
-.book img {
+.book-img {
     width: 100%;
-    max-height: 350px;
+    height: 0;
+    padding-top: 135%;
+    position: relative;
+    margin: auto;
+}
+
+.book-img img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    vertical-align: top;
     object-fit: cover;
 }
 
 .book h1 {
     padding: 8px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -372,7 +397,7 @@ main .main {
     width: 100%;
     text-align: justify;
     color: #5C6B73;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .info {
@@ -416,7 +441,7 @@ main .main {
 .event h1 {
     display: block;
     color: #253237;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -424,14 +449,14 @@ main .main {
 .event p {
     display: block;
     color: #5C6B73;
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
 }
 
 .event span {
     display: block;
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
     color: #5C6B73;
     padding: 4px 0;
 }
@@ -460,7 +485,7 @@ main .main {
 .exposition h1 {
     display: block;
     color: #253237;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -468,14 +493,14 @@ main .main {
 .exposition p {
     display: block;
     color: #5C6B73;
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
 }
 
 .exposition span {
     display: block;
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
     color: #5C6B73;
     padding: 4px 0;
 }
@@ -508,7 +533,7 @@ footer .footer {
 .footer ft {
     display: block;
     color: #70A6C4;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -526,7 +551,7 @@ footer .footer {
 
 .footer-left p {
     color: #FBFFFF;
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -540,12 +565,12 @@ footer .footer {
     color: #FBFFFF;
     vertical-align: middle;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .footer-right i {
     color: #FBFFFF;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     margin: 8px 8px;
     vertical-align: middle;
@@ -553,7 +578,7 @@ footer .footer {
 
 .footer-right span {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .footer-right p a {
@@ -662,6 +687,10 @@ hr {
 }
 
 @media (max-width: 600px) {
+
+    * {
+        font-size: 16px;
+    }
 
     .badge,
     .book {
