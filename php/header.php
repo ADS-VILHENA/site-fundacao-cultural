@@ -21,7 +21,7 @@
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Sobre nós</a></li>
                 <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="contato.php">Contato</a></li>
                 <label for="check" class="hide-menu"><i class="fas fa-times"></i></label>
             </div>
             <li class="search-bar">
