@@ -36,9 +36,12 @@
                 <hr class="horizontal">
                 <div class="partners">
                     <ft>Parceiros</ft>
-                    <img class="partner" src="assets/image/vortex_logo.jpeg" width="50" height="50">
-                    <img class="partner" src="assets/image/fslab_logo.jpeg" width="50" height="50">
-                    <img class="partner" src="assets/image/ifro_logo.jpeg" width="50" height="50">
+                    <?php $template_directory_vx = get_template_directory_uri(); ?>
+                    <img src="<?php echo $template_directory_vx;?>/assets/image/logo/vortex_logo.png" width="50" height="50">
+                    <?php $template_directory_ls = get_template_directory_uri(); ?>
+                    <img src="<?php echo $template_directory_ls;?>/assets/image/logo/fslab_logo.png" width="50" height="50">
+                    <?php $template_directory_if = get_template_directory_uri(); ?>
+                    <img src="<?php echo $template_directory_if;?>/assets/image/logo/ifro_logo.png" width="50" height="50">
                 </div>
             </div>
         </div>
