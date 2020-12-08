@@ -16,7 +16,7 @@
     <header>
         <nav class="header">
         <?php $template_directory = get_template_directory_uri(); ?>
-        <img src="<?php echo $template_directory;?>/assets/image/logo/funcultural_logo.png" width="125px"/>
+        <img src="<?php echo $template_directory;?>/assets/image/logo/funcultural_logo.png" width="125px" class="logo"/>
 
             <input type="checkbox" id="check">
             <label for="check" class="show-menu"><i class="fas fa-bars"></i></label>
