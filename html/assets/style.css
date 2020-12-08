@@ -11,6 +11,7 @@
     box-sizing: border-box;
 }
 
+/*#region Cabeçalho*/
 header {
     position: sticky;
     background: #FBFFFF;
@@ -50,9 +51,12 @@ header .header {
 
 .show-menu,
 .hide-menu {
-    font-size: 30px;
     cursor: pointer;
     display: none;
+}
+.show-menu i,
+.hide-menu i{
+    font-size: 28px;
 }
 
 #check {
@@ -61,6 +65,7 @@ header .header {
     z-index: -1000;
 }
 
+/*#region Barra de pesquisa*/
 .search-bar {
     height: 32px;
     width: 240px;
@@ -95,6 +100,9 @@ header .header {
     font-size: 18px;
 }
 
+/*#endregion */
+
+
 .menu a:hover,
 .show-menu:hover,
 .hide-menu:hover {
@@ -106,6 +114,8 @@ header .header {
     background-color: #47CF73;
     transition: .7s;
 }
+
+/*#endregion */
 
 main {
     position: relative;
@@ -148,12 +158,7 @@ main .main {
     margin-bottom: 8px;
 }
 
-.contact {
-    width: 100%;
-    margin-top: 30px;
-    text-align: center;
-}
-
+/*#region Página Inicial*/
 .news {
     width: 75%;
     position: relative;
@@ -194,7 +199,7 @@ main .main {
 
 .index_segment img {
     width: 100%;
-    filter: brightness(15%);
+    filter: brightness(25%);
     height: 170px;
     object-fit: cover;
 }
@@ -210,17 +215,89 @@ main .main {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/*#endregion */
+
+/*#region Página casa de Rondon*/
 .rondon {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    text-align: center;
+    justify-content: space-between;
 }
 
-.rondon img {
-    width: 30%;
-    padding: 0 15px;
+.rondon h1 {
+    display: block;
+    color: #253237;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.rondon-image-small {
+    position: relative;
+    width: 32.5%;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.rondon-image-big {
+    width: 100%;
+    margin: 8px 0;
 }
 
 .rondon p {
     text-align: justify;
+}
+/*#endregion */
+/*#region Página sobre autor*/
+.about {
+    width: 100%;
+    text-align: justify;
+    color: #5C6B73;
+    font-size: 18px;
+}
+
+.info {
+    text-align: center;
+    float: right;
+    margin-left: 15px;
+}
+
+.info-img {
+    width: 100%;
+    height: 0;
+    padding-top: 135%;
+    position: relative;
+    margin: auto;
+}
+
+.info-img img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+.info span {
+    display: block;
+    padding: 4px 0;
+}
+
+.info span i {
+    margin-right: 8px;
+    color: #253237;
+}
+
+/*#endregion */
+/*#region Página contate-nos*/
+.contact {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .form_contact {
@@ -254,6 +331,11 @@ main .main {
     cursor: pointer;
 }
 
+/*#endregion */
+
+
+
+/*#region Card segmentos*/
 .segment {
     position: relative;
     width: 100%;
@@ -266,8 +348,8 @@ main .main {
 
 .segment img {
     width: 35%;
+    max-height: 400px;
     margin-right: 30px;
-    height: 245px;
     object-fit: cover;
 }
 
@@ -299,6 +381,102 @@ main .main {
     border: none;
 }
 
+/*#endregion */
+/*#region Card eventos*/
+.event {
+    position: relative;
+    width: 100%;
+    background: #FBFFFF;
+    display: flex;
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgba(37, 50, 55, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
+    margin-top: 30px;
+}
+
+.event img {
+    width: 35%;
+    max-height: 400px;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.event h1 {
+    display: block;
+    color: #253237;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.event p {
+    display: block;
+    color: #5C6B73;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.event span {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    color: #5C6B73;
+    padding: 4px 0;
+}
+
+.event span i {
+    margin-right: 8px;
+    color: #253237;
+}
+
+/*#endregion */
+/*#region Card exposições*/
+.exposition {
+    position: relative;
+    width: 100%;
+    background: #FBFFFF;
+    display: flex;
+    padding: 10px;
+    box-shadow: 0px 5px 5px rgba(37, 50, 55, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
+    margin-top: 30px;
+}
+
+.exposition img {
+    width: 65%;
+    margin-right: 30px;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+.exposition h1 {
+    display: block;
+    color: #253237;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.exposition p {
+    display: block;
+    color: #5C6B73;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.exposition span {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    color: #5C6B73;
+    padding: 4px 0;
+}
+
+.exposition span i {
+    margin-right: 8px;
+    color: #253237;
+}
+
+/*#endregion */
+/*#region Card crachá*/
 .badge {
     position: relative;
     width: 23%;
@@ -354,6 +532,8 @@ main .main {
     border: none;
 }
 
+/*#endregion */
+/*#region Card livro*/
 .book {
     position: relative;
     width: 23%;
@@ -403,144 +583,18 @@ main .main {
     margin-right: 8px;
 }
 
-.about {
-    width: 100%;
-    text-align: justify;
-    color: #5C6B73;
-    font-size: 18px;
-}
+/*#endregion */
 
-.info {
-    width: 25%;
-    text-align: center;
-    float: right;
-    margin-left: 15px;
-}
 
-.info-img {
-    width: 100%;
-    height: 0;
-    padding-top: 135%;
-    position: relative;
-    margin: auto;
-}
 
-.info-img img {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    vertical-align: top;
-    object-fit: cover;
-}   
 
-.info span {
-    display: block;
-    padding: 4px 0;
-}
-
-.info span i {
-    margin-right: 8px;
-    color: #253237;
-}
-
-.event {
-    position: relative;
-    width: 100%;
-    background: #FBFFFF;
-    display: flex;
-    padding: 10px;
-    box-shadow: 0px 5px 5px rgba(37, 50, 55, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
-    margin-top: 30px;
-}
-
-.event img {
-    width: 35%;
-    margin-right: 30px;
-    object-fit: cover;
-}
-
-.event h1 {
-    display: block;
-    color: #253237;
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.event p {
-    display: block;
-    color: #5C6B73;
-    font-size: 18px;
-    text-align: justify;
-}
-
-.event span {
-    display: block;
-    text-align: left;
-    font-size: 18px;
-    color: #5C6B73;
-    padding: 4px 0;
-}
-
-.event span i {
-    margin-right: 8px;
-    color: #253237;
-}
-
-.exposition {
-    position: relative;
-    width: 100%;
-    background: #FBFFFF;
-    display: flex;
-    padding: 10px;
-    box-shadow: 0px 5px 5px rgba(37, 50, 55, 0.15), 0px -5px 5px rgba(37, 50, 55, 0.15);
-    margin-top: 30px;
-}
-
-.exposition img {
-    width: 65%;
-    margin-right: 30px;
-    object-fit: cover;
-    height: 500px;
-}
-
-.exposition h1 {
-    display: block;
-    color: #253237;
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.exposition p {
-    display: block;
-    color: #5C6B73;
-    font-size: 18px;
-    text-align: justify;
-}
-
-.exposition span {
-    display: block;
-    text-align: left;
-    font-size: 18px;
-    color: #5C6B73;
-    padding: 4px 0;
-}
-
-.exposition span i {
-    margin-right: 8px;
-    color: #253237;
-}
-
+/*#region Rodapé*/
 footer {
     position: relative;
     background: #253237;
     width: 100%;
     padding: 10px 30px;
     bottom: 0;
-    margin-top: 30px;
     box-shadow: 0 -5px 5px rgba(37, 50, 50, 0.15);
 }
 
@@ -594,7 +648,7 @@ footer .footer {
 
 .footer-right i {
     color: #FBFFFF;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     margin: 8px 8px;
     vertical-align: middle;
@@ -608,6 +662,7 @@ footer .footer {
 .footer-right p a {
     color: #70A6C4;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .partners {
@@ -632,6 +687,10 @@ hr {
     height: 2px;
 }
 
+/*#endregion */
+
+
+
 @media (max-width: 1016px) {
     .logo {
         display: none;
@@ -641,18 +700,17 @@ hr {
     .book {
         width: 30%;
     }
-
-    .rondon img {
-        padding: 0;
-    }
 }
 
 @media (max-width: 800px) {
+    * {
+        padding: 0;
+    }
 
     header,
     main,
     footer {
-        padding: 8px;
+        padding: 8px 16px;
     }
 
     .show-menu,
@@ -684,10 +742,6 @@ hr {
         left: 16px;
     }
 
-    .main {
-        padding: 0 8px;
-    }
-
     #check:checked~.menu {
         left: 0;
     }
@@ -695,6 +749,10 @@ hr {
     .badge,
     .book {
         width: 45%;
+    }
+
+    .rondon-image-small {
+        width: 49%;
     }
 
     .footer-right {
@@ -744,25 +802,11 @@ hr {
     }
 
     .info {
-        width: 100%;
         float: none;
         margin: auto;
     }
-    .info-img {
-        width: 75%;
-        height: 0;
-        padding-top: 100%;
-        position: relative;
-        margin: auto;
-    }
-    .info-img img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        object-fit: cover;
-    }   
 
-    .rondon img {
+    .rondon-image-small {
         width: 100%;
     }
 }
