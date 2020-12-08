@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Contato
+*/
+?>
 <?php get_header(); ?>
 <main>
         <div class="main">
