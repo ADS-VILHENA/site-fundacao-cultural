@@ -411,6 +411,7 @@ main .main {
 }
 
 .info {
+    width: 25%;
     text-align: center;
     float: right;
     margin-left: 15px;
@@ -651,7 +652,7 @@ hr {
     header,
     main,
     footer {
-        padding: 8px 16px;
+        padding: 8px;
     }
 
     .show-menu,
@@ -743,9 +744,23 @@ hr {
     }
 
     .info {
+        width: 100%;
         float: none;
         margin: auto;
     }
+    .info-img {
+        width: 75%;
+        height: 0;
+        padding-top: 100%;
+        position: relative;
+        margin: auto;
+    }
+    .info-img img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+    }   
 
     .rondon img {
         width: 100%;
