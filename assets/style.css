@@ -288,7 +288,7 @@ main .main {
 .segments {
     width: 25%;
     position: relative;
-    display: flex;
+    display: block;
     padding-left: 30px;
     float: right;
 }
@@ -690,6 +690,21 @@ main .main {
     .logo {
         display: none;
     }
+    .news {
+        width: 100%;
+    }
+    .segments {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        float: none;
+        padding-left: 0;
+        justify-content: space-between;
+    }
+    .index_segment {
+        width: 32.5%;
+    }
 
     .badge,
     .book {
@@ -740,6 +755,9 @@ main .main {
     #check:checked~.menu {
         left: 0;
     }
+    .index_segment {
+        width: 49.5%;
+    }
 
     .badge,
     .book {
@@ -767,6 +785,9 @@ main .main {
 
     .badge,
     .book {
+        width: 100%;
+    }
+    .index_segment {
         width: 100%;
     }
 
