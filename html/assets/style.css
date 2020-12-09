@@ -117,6 +117,107 @@ header .header {
 
 /*#endregion */
 
+/*#region Rodapé*/
+footer {
+    position: relative;
+    background: #253237;
+    width: 100%;
+    padding: 10px 30px;
+    bottom: 0;
+    box-shadow: 0 -5px 5px rgba(37, 50, 50, 0.15);
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer .footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer ft {
+    display: block;
+    color: #70A6C4;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer-left,
+.footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-left {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.footer-left p {
+    color: #FBFFFF;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.footer-right {
+    width: 50%;
+    padding-left: 15px;
+}
+
+.footer-right p {
+    display: inline-block;
+    color: #FBFFFF;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer-right i {
+    color: #FBFFFF;
+    font-size: 20px;
+    text-align: center;
+    margin: 8px 8px;
+    vertical-align: middle;
+}
+
+.footer-right span {
+    display: block;
+    font-size: 14px;
+}
+
+.footer-right p a {
+    color: #70A6C4;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.partners {
+    display: block;
+}
+
+.partners img {
+    border-radius: 100px;
+    border: 3px solid #5C6B73;
+    object-fit: cover;
+}
+
+hr {
+    background-color: #5C6B73;
+    border: none;
+}
+
+.horizontal {
+    margin: 8px 0;
+    width: 100%;
+    display: block;
+    height: 2px;
+}
+
+/*#endregion */
+
 main {
     position: relative;
     background: #FBFFFF;
@@ -332,8 +433,6 @@ main .main {
 }
 
 /*#endregion */
-
-
 
 /*#region Card segmentos*/
 .segment {
@@ -587,113 +686,24 @@ main .main {
 
 
 
-
-/*#region Rodapé*/
-footer {
-    position: relative;
-    background: #253237;
-    width: 100%;
-    padding: 10px 30px;
-    bottom: 0;
-    box-shadow: 0 -5px 5px rgba(37, 50, 50, 0.15);
-}
-
-.footer {
-    max-width: 1200px;
-    margin: auto;
-}
-
-footer .footer {
-    display: flex;
-    align-items: center;
-}
-
-.footer ft {
-    display: block;
-    color: #70A6C4;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.footer-left,
-.footer-right {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.footer-left {
-    width: 50%;
-    padding-right: 15px;
-}
-
-.footer-left p {
-    color: #FBFFFF;
-    font-size: 16px;
-    text-align: justify;
-}
-
-.footer-right {
-    width: 50%;
-    padding-left: 15px;
-}
-
-.footer-right p {
-    display: inline-block;
-    color: #FBFFFF;
-    vertical-align: middle;
-    margin: 0;
-    font-size: 18px;
-}
-
-.footer-right i {
-    color: #FBFFFF;
-    font-size: 20px;
-    text-align: center;
-    margin: 8px 8px;
-    vertical-align: middle;
-}
-
-.footer-right span {
-    display: block;
-    font-size: 14px;
-}
-
-.footer-right p a {
-    color: #70A6C4;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.partners {
-    display: block;
-}
-
-.partners img {
-    border-radius: 100px;
-    border: 3px solid #5C6B73;
-    object-fit: cover;
-}
-
-hr {
-    background-color: #5C6B73;
-    border: none;
-}
-
-.horizontal {
-    margin: 8px 0;
-    width: 100%;
-    display: block;
-    height: 2px;
-}
-
-/*#endregion */
-
-
-
 @media (max-width: 1016px) {
     .logo {
         display: none;
+    }
+    .news {
+        width: 100%;
+    }
+    .segments {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        float: none;
+        padding-left: 0;
+        justify-content: space-between;
+    }
+    .index_segment {
+        width: 32.5%;
     }
 
     .badge,
@@ -745,6 +755,9 @@ hr {
     #check:checked~.menu {
         left: 0;
     }
+    .index_segment {
+        width: 49.5%;
+    }
 
     .badge,
     .book {
@@ -772,6 +785,9 @@ hr {
 
     .badge,
     .book {
+        width: 100%;
+    }
+    .index_segment {
         width: 100%;
     }
 
