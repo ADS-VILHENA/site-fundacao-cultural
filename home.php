@@ -36,8 +36,11 @@
                     'category_name' => 'menu_segmentos',
                     'order' => 'ASC');
                     $menu_segmentos = new WP_Query( $args );
+                    // var_dump($menu_segmentos);
                     if( $menu_segmentos->have_posts() ) :
                         while ( $menu_segmentos->have_posts() ) : $menu_segmentos->the_post(); ?>
+                            <a href="<?php bloginfo('url')?>/?page_id=60#">
+                            <!-- <?php var_dump($args);?> -->
                             <div class="index_segment">
                                 <?php the_post_thumbnail('full');?>
                                 <h1><?php the_title(); ?></h1>
