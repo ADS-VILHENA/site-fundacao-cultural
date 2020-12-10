@@ -54,8 +54,9 @@ header .header {
     cursor: pointer;
     display: none;
 }
+
 .show-menu i,
-.hide-menu i{
+.hide-menu i {
     font-size: 28px;
 }
 
@@ -116,7 +117,6 @@ header .header {
 }
 
 /*#endregion */
-
 /*#region Rodapé*/
 footer {
     position: relative;
@@ -350,6 +350,7 @@ main .main {
 .rondon p {
     text-align: justify;
 }
+
 /*#endregion */
 /*#region Página sobre autor*/
 .about {
@@ -433,6 +434,45 @@ main .main {
 }
 
 /*#endregion */
+/*#region Página cultura indígena*/
+.etnias {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.etnia {
+    width: 23%;
+    margin-top: 8px;
+}
+
+.etnia-img {
+    width: 100%;
+}
+
+.indigena h1 {
+    display: block;
+    color: #253237;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.indigena p {
+    text-align: justify;
+}
+
+.indigena-img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    margin-top: 8px;
+}
+
+/*#endregion*/
+
 
 /*#region Card segmentos*/
 .segment {
@@ -447,7 +487,7 @@ main .main {
 
 .segment img {
     width: 35%;
-    max-height: 400px;
+    max-height: 250px;
     margin-right: 30px;
     object-fit: cover;
 }
@@ -690,9 +730,11 @@ main .main {
     .logo {
         display: none;
     }
+
     .news {
         width: 100%;
     }
+
     .segments {
         width: 100%;
         position: relative;
@@ -702,12 +744,14 @@ main .main {
         padding-left: 0;
         justify-content: space-between;
     }
+
     .index_segment {
         width: 32.5%;
     }
 
     .badge,
-    .book {
+    .book,
+    .etnia {
         width: 30%;
     }
 }
@@ -755,12 +799,14 @@ main .main {
     #check:checked~.menu {
         left: 0;
     }
+
     .index_segment {
         width: 49.5%;
     }
 
     .badge,
-    .book {
+    .book,
+    .etnia {
         width: 45%;
     }
 
@@ -784,9 +830,11 @@ main .main {
 @media (max-width: 600px) {
 
     .badge,
-    .book {
+    .book,
+    .etnia {
         width: 100%;
     }
+
     .index_segment {
         width: 100%;
     }
