@@ -360,10 +360,16 @@ main .main {
     font-size: 18px;
 }
 
+.publications img {
+    width: 100%;
+    margin-top: 8px;
+}
+
 .info {
     text-align: center;
     float: right;
     margin-left: 15px;
+    margin-top: 8px;
 }
 
 .info-img {
