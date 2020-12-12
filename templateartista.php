@@ -28,7 +28,7 @@ Template Name: sobre_artista
                 </div>
                 <div class="publications">
                 <h1>Publicações</h1>
-                <img src="<?php echo $template_directory_card;?>/assets/image/artist_test.jpeg" alt="Foto do artista">
+                <img src="<?php echo $template_directory_card;?>/assets/image/publicacao.jpg" alt="Foto do artista">
                 </div>    
                 <?php endwhile;?>
                     <?php

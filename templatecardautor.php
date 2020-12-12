@@ -20,11 +20,12 @@ Template Name: cardautor
                         <?php $template_directory_card = get_template_directory_uri(); ?>
                         <img src="<?php echo $template_directory_card;?>/assets/image/artist_test.jpeg" alt="Foto do artista">
                         </div>
-                        <h1><?php the_title(); ?>
-                        <span><i class="fa fa-envelope"></i>exemple@mail.com</span>
+                        <h1><?php the_title(); ?> </h1>
+                        <span><i class="fa fa-envelope"></i>umexemple@mail.com</span>
                         <span><i class="fa fa-phone"></i>(64) 91321-2902</span>
-                        <span><i class="fas fa-birthday-cake"></i>dd/mm/aaaa</span>
+                        <span><i class="fas fa-birthday-cake"></i>16/03/1998</span>
                         <button>Ver mais</button>
+                       
                     </div>
                     <?php endwhile;?>
                     <?php wp_reset_postdata();?>
